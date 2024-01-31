@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 30, 2024 02:40:23 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 30, 2024 06:33:02 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -81,7 +87,7 @@
           <div class="test-detail">
             <p class="name">Add item to My Bag</p>
             <p class="text-sm">
-              <span>14:40:23 PM</span> / <span>00:07:081</span>
+              <span>18:33:02 PM</span> / <span>00:07:358</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,9 +96,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Add item to My Bag</h5>
-<span class='badge badge-success'>01.30.2024 14:40:23</span>
-<span class='badge badge-danger'>01.30.2024 14:40:30</span>
-<span class='badge badge-default'>00:07:081</span>
+<span class='badge badge-success'>01.30.2024 18:33:02</span>
+<span class='badge badge-danger'>01.30.2024 18:33:10</span>
+<span class='badge badge-default'>00:07:358</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -138,9 +144,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">feature to test marshalls store locator search with valid city and state combo</p>
+            <p class="name">App Store</p>
             <p class="text-sm">
-              <span>14:40:30 PM</span> / <span>00:09:321</span>
+              <span>18:33:10 PM</span> / <span>00:08:701</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -148,10 +154,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">feature to test marshalls store locator search with valid city and state combo</h5>
-<span class='badge badge-success'>01.30.2024 14:40:30</span>
-<span class='badge badge-danger'>01.30.2024 14:40:40</span>
-<span class='badge badge-default'>00:09:321</span>
+<h5 class="test-status text-pass">App Store</h5>
+<span class='badge badge-success'>01.30.2024 18:33:10</span>
+<span class='badge badge-danger'>01.30.2024 18:33:19</span>
+<span class='badge badge-default'>00:08:701</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -161,7 +167,61 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by valid city and state combo search is working</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Download it On The App Store</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.AppStore.my_driver_is_open_and_main_page_is_open()">
+                <span>Given my driver is open and main page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.AppStore.click_on_app_store()">
+                <span>When click on app store</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.AppStore.app_store_page_visible()">
+                <span>Then app store page visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search with valid city and state combo</p>
+            <p class="text-sm">
+              <span>18:33:19 PM</span> / <span>00:47:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to test marshalls store locator search with valid city and state combo</h5>
+<span class='badge badge-success'>01.30.2024 18:33:19</span>
+<span class='badge badge-danger'>01.30.2024 18:34:06</span>
+<span class='badge badge-default'>00:47:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by valid city and state combo search is working</div>
       </div>
     </div>
         <div class="collapse">
@@ -202,14 +262,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="15"
+        <li class="test-item"  status="pass" test-id="20"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">feature to test marshalls store locator search with invalid city and state combo</p>
+            <p class="name">Frequently Asked Questions</p>
             <p class="text-sm">
-              <span>14:40:40 PM</span> / <span>00:16:786</span>
+              <span>18:34:06 PM</span> / <span>00:08:119</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -217,11 +277,11 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">feature to test marshalls store locator search with invalid city and state combo</h5>
-<span class='badge badge-success'>01.30.2024 14:40:40</span>
-<span class='badge badge-danger'>01.30.2024 14:40:57</span>
-<span class='badge badge-default'>00:16:786</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<h5 class="test-status text-pass">Frequently Asked Questions</h5>
+<span class='badge badge-success'>01.30.2024 18:34:06</span>
+<span class='badge badge-danger'>01.30.2024 18:34:14</span>
+<span class='badge badge-default'>00:08:119</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -230,7 +290,179 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by invalid city and state combo search is working</div>
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Navigate to faq</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.FrequentAskQuestion.my_driver_is_open()">
+                <span>Given my driver is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.FrequentAskQuestion.marshalls_home_page_is_open()">
+                <span>And marshalls home page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.FrequentAskQuestion.i_click_in_link()">
+                <span>When I click in link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.FrequentAskQuestion.faq_is_open()">
+                <span>Then faq is open</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Gift card</p>
+            <p class="text-sm">
+              <span>18:34:14 PM</span> / <span>00:07:769</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Gift card</h5>
+<span class='badge badge-success'>01.30.2024 18:34:14</span>
+<span class='badge badge-danger'>01.30.2024 18:34:22</span>
+<span class='badge badge-default'>00:07:769</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Add gift card to bag</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.GiftCard.wed_driver_is_open()">
+                <span>Given wed driver is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.GiftCard.store_main_page_is_open()">
+                <span>And store main page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.GiftCard.we_click_gift_card()">
+                <span>When we click gift card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.GiftCard.gift_card_page_visible()">
+                <span>Then gift card page visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Get It On Google Play</p>
+            <p class="text-sm">
+              <span>18:34:22 PM</span> / <span>00:08:609</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get It On Google Play</h5>
+<span class='badge badge-success'>01.30.2024 18:34:22</span>
+<span class='badge badge-danger'>01.30.2024 18:34:31</span>
+<span class='badge badge-default'>00:08:609</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>navigate ot Get It On Google Play</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.GooglePlay.driver_is_opent_and_home_page_is_visible()">
+                <span>Given driver is opent and home page is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.GooglePlay.now_click_on_link()">
+                <span>When now click on link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.GooglePlay.google_play_is_visible()">
+                <span>Then google play is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to test marshalls store locator search with invalid city and state combo</p>
+            <p class="text-sm">
+              <span>18:34:31 PM</span> / <span>00:18:866</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to test marshalls store locator search with invalid city and state combo</h5>
+<span class='badge badge-success'>01.30.2024 18:34:31</span>
+<span class='badge badge-danger'>01.30.2024 18:34:50</span>
+<span class='badge badge-default'>00:18:866</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by invalid city and state combo search is working</div>
       </div>
     </div>
         <div class="collapse">
@@ -271,7 +503,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by invalid city and state combo search is working</div>
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>validate store locator by invalid city and state combo search is working</div>
       </div>
     </div>
         <div class="collapse">
@@ -312,14 +544,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="30"
+        <li class="test-item"  status="pass" test-id="52"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">feature to test marshalls store locator search with invalid zip</p>
             <p class="text-sm">
-              <span>14:40:57 PM</span> / <span>00:06:426</span>
+              <span>18:34:50 PM</span> / <span>00:08:700</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -328,10 +560,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">feature to test marshalls store locator search with invalid zip</h5>
-<span class='badge badge-success'>01.30.2024 14:40:57</span>
-<span class='badge badge-danger'>01.30.2024 14:41:03</span>
-<span class='badge badge-default'>00:06:426</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-success'>01.30.2024 18:34:50</span>
+<span class='badge badge-danger'>01.30.2024 18:34:58</span>
+<span class='badge badge-default'>00:08:700</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -340,7 +572,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Validate store locator by invalid zip search is working</div>
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>Validate store locator by invalid zip search is working</div>
       </div>
     </div>
         <div class="collapse">
@@ -371,26 +603,26 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="36"
+        <li class="test-item"  status="fail" test-id="58"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">feature to test search multiple items</p>
             <p class="text-sm">
-              <span>14:41:03 PM</span> / <span>00:12:053</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>18:34:58 PM</span> / <span>00:21:415</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">feature to test search multiple items</h5>
-<span class='badge badge-success'>01.30.2024 14:41:03</span>
-<span class='badge badge-danger'>01.30.2024 14:41:15</span>
-<span class='badge badge-default'>00:12:053</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<h5 class="test-status text-fail">feature to test search multiple items</h5>
+<span class='badge badge-success'>01.30.2024 18:34:58</span>
+<span class='badge badge-danger'>01.30.2024 18:35:20</span>
+<span class='badge badge-default'>00:21:415</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -399,30 +631,58 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Search for multiple invalid items</div>
+        <div class="node" id="59"><span class="badge log fail-bg mr-2">Fail</span>Search for multiple invalid items</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Search for multiple invalid items</div>
+                  <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>Search for multiple invalid items</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
+              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given user on home page</span>
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>When Add "drill" to search</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.85)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RHLDRT6', ip: '10.1.10.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5260398b18f9b5b4ac2d76dcf27bcca5
+*** Element info: {Using=id, value=search-text-input}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinition.MultiItems.add_to_search(MultiItems.java:32)
+	at ✽.Add "drill" to search(file:///C:/Users/Lenovo/eclipse-workspace/marshalls/src/test/resources/Features/MiltiItems.feature:5)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then userb expects "searched" on page</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
               </div>
@@ -430,7 +690,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Search for multiple invalid items</div>
+                  <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Search for multiple invalid items</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -456,14 +716,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="46"
+        <li class="test-item"  status="pass" test-id="68"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">feature to test search items</p>
             <p class="text-sm">
-              <span>14:41:15 PM</span> / <span>00:16:926</span>
+              <span>18:35:20 PM</span> / <span>00:20:009</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -472,10 +732,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">feature to test search items</h5>
-<span class='badge badge-success'>01.30.2024 14:41:15</span>
-<span class='badge badge-danger'>01.30.2024 14:41:32</span>
-<span class='badge badge-default'>00:16:926</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-success'>01.30.2024 18:35:20</span>
+<span class='badge badge-danger'>01.30.2024 18:35:40</span>
+<span class='badge badge-default'>00:20:009</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -484,7 +744,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Irrelevant items are displayed after entering in Search box</div>
+        <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>Irrelevant items are displayed after entering in Search box</div>
       </div>
     </div>
         <div class="collapse">
@@ -515,7 +775,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Relevant items are displayed after entering in Search box</div>
+        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>Relevant items are displayed after entering in Search box</div>
       </div>
     </div>
         <div class="collapse">
@@ -551,14 +811,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="58"
+        <li class="test-item"  status="pass" test-id="80"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">feature to test marshalls store locator search</p>
             <p class="text-sm">
-              <span>14:41:32 PM</span> / <span>00:06:317</span>
+              <span>18:35:40 PM</span> / <span>00:06:578</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -567,10 +827,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">feature to test marshalls store locator search</h5>
-<span class='badge badge-success'>01.30.2024 14:41:32</span>
-<span class='badge badge-danger'>01.30.2024 14:41:38</span>
-<span class='badge badge-default'>00:06:317</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-success'>01.30.2024 18:35:40</span>
+<span class='badge badge-danger'>01.30.2024 18:35:46</span>
+<span class='badge badge-default'>00:06:578</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -579,7 +839,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Validate store locator by zip search is working</div>
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Validate store locator by zip search is working</div>
       </div>
     </div>
         <div class="collapse">
@@ -624,30 +884,82 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:35:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='62'>When Add "drill" to search</a>
+<div class="">
+<span class="badge badge-default">feature to test search multiple items.Search for multiple invalid items.When Add "drill" to search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 30, 2024 02:40:23 PM</h3>
+<h3>Jan 30, 2024 06:33:02 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 30, 2024 02:41:38 PM</h3>
+<h3>Jan 30, 2024 06:35:46 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>7</h3>
+<h3>10</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -663,12 +975,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>7</b> features passed
+<div><small data-tooltip='90%'>
+<b>10</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='9%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -686,9 +998,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>10</b> scenarios passed</small></div>
+<div><small data-tooltip='92%'><b>13</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='7%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -706,10 +1018,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>46</b> steps passed</small></div>
+<div><small data-tooltip='96%'><b>58</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -725,7 +1037,7 @@
 </div></div>
 <script>
 var timeline = {
-"Add item to My Bag":7.081,"feature to test marshalls store locator search with valid city and state combo":9.321,"feature to test marshalls store locator search with invalid city and state combo":16.786,"feature to test marshalls store locator search with invalid zip":6.426,"feature to test search multiple items":12.053,"feature to test search items":16.926,"feature to test marshalls store locator search":6.317
+"Add item to My Bag":7.358,"App Store":8.701,"feature to test marshalls store locator search with valid city and state combo":47.664,"Frequently Asked Questions":8.119,"Gift card":7.769,"Get It On Google Play":8.609,"feature to test marshalls store locator search with invalid city and state combo":18.866,"feature to test marshalls store locator search with invalid zip":8.7,"feature to test search multiple items":21.415,"feature to test search items":20.009,"feature to test marshalls store locator search":6.578
 };
 </script>
 <div class="row">
@@ -734,21 +1046,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 7,
-failParent: 0,
+passParent: 10,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 10,
-failChild: 0,
+passChild: 13,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 46,
-failGrandChild: 0,
+passGrandChild: 58,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };

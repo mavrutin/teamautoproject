@@ -8,47 +8,38 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class NoResult {
-
-WebDriver driver = null;
+public class GooglePlay {
+	WebDriver driver = null;
 	
-	@Given("User is on home page")
-	public void user_is_on_home_page() {
+	@Given("driver is opent and home page is visible")
+	public void driver_is_opent_and_home_page_is_visible() {
 	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
+	    //throw new io.cucumber.java.PendingException();
 		System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		driver.navigate().to("https://marshalls.com/us/store/index.jsp");
-		
 	}
 
-	@When("User searches irrelevant items in a search box")
-	public void user_searches_irrelevant_items_in_a_search_box() {
+	@When("now click on link")
+	public void now_click_on_link() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		driver.findElement(By.id("search-text-input")).sendKeys("live roses");
-		
+		driver.findElement(By.linkText("Get It On Google Play")).click();
+	    driver.get("https://play.google.com/store/apps/details?id=com.tjx.marshalls");
+	    driver.findElement(By.xpath("//body[@id='yDmH0d']/c-wiz[2]/div/div/div[2]/div/div")).click();
+	    
 	}
 
-	@When("User clicks search")
-	public void user_clicks_search() {
+	@Then("google play is visible")
+	public void google_play_is_visible() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		driver.findElement(By.id("search-submit-button")).click();
+		driver.getPageSource().contains("Marshalls Official");
 
-		
-	}
-
-	@Then("User is shown no results")
-	public void user_is_shown_no_results() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
-		
-		driver.getPageSource().contains("no result"); 
-		
 		driver.close();
+		
 	}
-	
+
 }

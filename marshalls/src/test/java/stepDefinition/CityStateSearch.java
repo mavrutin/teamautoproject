@@ -18,8 +18,8 @@ public class CityStateSearch {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 		System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
-		  driver = new ChromeDriver();
-		  driver.manage().window().maximize(); 
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 
 	@Given("user is on marshalls store locator search page")

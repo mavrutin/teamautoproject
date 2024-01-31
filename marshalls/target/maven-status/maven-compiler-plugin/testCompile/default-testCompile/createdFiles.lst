@@ -1,5 +1,5 @@
-stepDefinition\CityStateSearch.class
 stepDefinition\InvalidZip.class
+stepDefinition\InvalidCityState.class
+stepDefinition\CityStateSearch.class
 stepDefinition\StoreLocatorByZip.class
 stepDefinition\MyRunner.class
-stepDefinition\InvalidCityState.class

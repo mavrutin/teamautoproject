@@ -8,47 +8,36 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class NoResult {
-
-WebDriver driver = null;
+public class AppStore {
+	WebDriver driver = null;
 	
-	@Given("User is on home page")
-	public void user_is_on_home_page() {
+	@Given("my driver is open and main page is open")
+	public void my_driver_is_open_and_main_page_is_open() {
 	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
+	    //throw new io.cucumber.java.PendingException();
 		System.setProperty("webdriver.chrome.driver", "c:\\data\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		driver.navigate().to("https://marshalls.com/us/store/index.jsp");
-		
 	}
 
-	@When("User searches irrelevant items in a search box")
-	public void user_searches_irrelevant_items_in_a_search_box() {
+	@When("click on app store")
+	public void click_on_app_store() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		driver.findElement(By.id("search-text-input")).sendKeys("live roses");
-		
+		driver.findElement(By.linkText("Download it On The App Store")).click();
 	}
 
-	@When("User clicks search")
-	public void user_clicks_search() {
+	@Then("app store page visible")
+	public void app_store_page_visible() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-		driver.findElement(By.id("search-submit-button")).click();
+		driver.getPageSource().contains("Marshalls Official");
 
-		
-	}
-
-	@Then("User is shown no results")
-	public void user_is_shown_no_results() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
-		
-		driver.getPageSource().contains("no result"); 
-		
 		driver.close();
+		
 	}
-	
+
+
 }
